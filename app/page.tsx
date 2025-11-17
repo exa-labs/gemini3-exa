@@ -57,7 +57,9 @@ export default function Page() {
       {/* Chat Messages */}
       <div className="md:max-w-4xl mx-auto px-4 md:px-6 py-6 pt-20 pb-24 space-y-6">
         <div className="space-y-6">
-          {messages.map((message: { id: string; role: string; content: string }) => (
+          {messages
+            .filter((message: { id: string; role: string; content: string }) => message.content.trim().length > 0)
+            .map((message: { id: string; role: string; content: string }) => (
             <div key={message.id}>
               <div
                 className={`flex ${
