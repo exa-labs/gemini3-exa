@@ -24,12 +24,9 @@ export async function POST(req: Request) {
         }),
         execute: async ({ query }) => {
           try {
-            const results = await exa.search(query, {
-              
-              
-              numResults: 5,
+            const results = await exa.searchAndContents(query, {
+              numResults: 8,
               type: 'auto',
-              useAutoprompt: true
             });
             return results.results;
           } catch (error) {

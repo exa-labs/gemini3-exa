@@ -21,29 +21,21 @@ const reckless = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Exa & o3-mini chat app",
-  description: "An opensource chat application built with Exa for web search and openai o3-mini.",
+  title: "Exa & Gemini 3 chat app",
+  description: "An opensource chat application built with Exa for web search and openai Gemini 3.",
   openGraph: {
-    title: "Exa & o3-mini chat app",
-    description: "An opensource chat application built with Exa for web search and openai o3-mini.",
+    title: "Exa & Gemini 3 chat app",
+    description: "An opensource chat application built with Exa for web search and openai Gemini 3.",
     type: "website",
     locale: "en_US",
-    images: [
-      {
-        url: "https://o3minichat.exa.ai/opengraph-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Exa & o3-mini chat app"
-      }
-    ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Exa & o3-mini chat app",
-    description: "An opensource chat application built with Exa for web search and openai o3-mini.",
-    images: ["https://o3minichat.exa.ai/opengraph-image.jpg"]
+    title: "Exa & Gemini 3 chat app",
+    description: "An opensource chat application built with Exa for web search and openai Gemini 3.",
+    images: ["https://gemini3-exa.vercel.app/opengraph-image.jpg"]
   },
-  metadataBase: new URL("https://o3minichat.exa.ai/"),
+  metadataBase: new URL("https://gemini3-exa.vercel.app/"),
   robots: {
     index: true,
     follow: true
